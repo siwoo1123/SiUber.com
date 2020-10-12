@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiUber-공지</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        a {
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            font-size: 80px;
+        }
+        h1 a span:nth-child(1) {
+            color: #4385f3;
+        }
+
+        h1 a span:nth-child(2) {
+            color: #ea4435;
+        }
+        h1 a span:nth-child(3) {
+            color: #fbbc04;
+        }
+        h1 a span:nth-child(4) {
+            color: #4385f3;
+        }
+        h1 a span:nth-child(5) {
+            color: #33a952;
+        }
+        h1 a span:nth-child(6) {
+            color: #ea4435;
+        }
+        .alert {
+    padding: 20px;
+    background-color: #fbbc04;
+    color: white;
+    display: none;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+  @media (max-width:774px) {
+    h1{
+      font-size: 58px;
+    }
+    #searchbarnav, #game {
+      display: none;
+    }
+  }
+    </style>
+</head>
+<script>
+    function siuber(){
+        location.href="http://siuber.com"
+    }
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">SiUber</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">공지</a>
+              </li>
+              <li class="nav-item active">
+                <div id="game">
+                  <a class="nav-link" href="./gamezone.html">게임존</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+              </li>
+            <li class="nav-itam active">
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_hzlz"></div>
+
+            </li>
+            <li class="nav-item active">
+            </li>
+            <li class="nav-item active">
+              <div id="searchbarnav">
+              <form class="form-inline" action="https://www.google.com/search" method="GET">
+                <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="검색" aria-label="Search" name='q'>
+                <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">검색</button>
+              </form>
+              <div id="searchbarnav">
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>주의!</strong> 이 게시판은 자유게시판이 아닙니다.
+      </div>
+    <h1>
+      <a onclick="siuber()" style="cursor: pointer; text-decoration: none;" class="siuber"><span>S</span><span>i</span><span>U</span><span>b</span><span>e</span><span>r</span></a> 공지
+    </h1>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>게시글 이름</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a onclick="alert('안녕하세요.\n제작자\n\n안녕하세요.')">1.</a></td>
+                <td><a onclick="alert('안녕하세요.\n제작자\n\n안녕하세요.')">안녕하세요.</a></td>
+                <td><a onclick="alert('제작자\n\n말그대로 제작자')">제작자</a></td>
+                <td><a onclick="alert('2020년 9월 10일 목요일 5시41분')">2020.9.10(목)</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec9e78baf8d5b5d"></script>
+</body>
+</html>
